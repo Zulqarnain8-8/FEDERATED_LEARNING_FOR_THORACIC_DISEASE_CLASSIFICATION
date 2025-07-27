@@ -22,7 +22,9 @@ ________________________________________
  Key Logic:
 Uses a pretrained EfficientNet-B3 as backbone.
 Adds a custom classification head with Linear → HardSwish → Dropout → Linear.
-________________________________________
+
+________<img width="1431" height="827" alt="Figure  2  Proposed model and FL framework" src="https://github.com/user-attachments/assets/73804ab3-8e00-42dc-b00e-0f640fed8f14" />
+________________________________
 3. Federated Learning Setup
 •	Purpose: Simulate decentralized training across multiple clients.
 •	Key Logic:
@@ -44,6 +46,7 @@ ________________________________________
 o	Computes AUROC for each of the 14 diseases.
 o	Displays per-class and mean AUROC.
 o	Plots ROC curves and saves as ROC.png
+<img width="1378" height="690" alt="Figure  4 (complete) ROC of Proposed model (Efficient net B3)" src="https://github.com/user-attachments/assets/d4fe1448-1f72-485f-a295-28e04c3f70a8" />
 
 
 ##########  Federated Learning With Differential Privacy ##########
@@ -77,3 +80,7 @@ o	Protects updates via differential privacy without leaking raw gradients.
 ________________________________________
 5. Final Model Save
 •	Purpose: Store the privacy-preserving global model.
+
+![Figure  7  Class Wise Characteristic Curves ε= 15, σ =0 3575 (Indicates Moderate Privacy)](https://github.com/user-attachments/assets/2e7b1c56-9376-49dc-9ff1-b374aa052fa9)
+<img width="1172" height="834" alt="Figure  6  AUC Wise Characteristic Curves ε= 15, σ =0 3575 (Indicates Moderate Privacy)" src="https://github.com/user-attachments/assets/bc64bdc9-40bb-49b5-a15f-8c55e586afe4" />
+<img width="1203" height="856" alt="Figure  8  Class Wise Characteristic Curves ε= 30, σ =0 2870 (Indicates Low Privacy)" src="https://github.com/user-attachments/assets/30945e32-39d6-4ffd-a5a7-ef8f9d1edb0c" />
